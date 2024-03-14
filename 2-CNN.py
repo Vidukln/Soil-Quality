@@ -68,7 +68,6 @@ test_generator = test_datagen.flow_from_dataframe(
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense, Dropout
 
-#Define a more complex CNN model
 model = Sequential([
     Conv2D(32, (3, 3), activation='relu', input_shape=(img_height, img_width, 3)),
     Conv2D(32, (3, 3), activation='relu'),
